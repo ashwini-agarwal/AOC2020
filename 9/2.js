@@ -9,11 +9,11 @@ for (let i = 0; i < input.length - chunk; i++) {
     for (let k = j + 1; k < chunk; k++) {
       if (slice[j] + slice[k] === input[i + chunk]) {
         found = true;
-        continue;
+        break;
       }
     }
     if (found) {
-      continue;
+      break;
     }
   }
 
