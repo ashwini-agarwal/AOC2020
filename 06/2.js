@@ -2738,7 +2738,7 @@ const answers = [
 ];
 
 function intersection(arr) {
-  let tempArray = arr.sort(function(a, b) {
+  let tempArray = arr.sort(function (a, b) {
     return a.length - b.length;
   });
 
