@@ -917,7 +917,6 @@ const right = 'R';
 let row_bracket = [0, 127];
 for (let count = 0; count < 7; count++) {
   temp = data.filter(seat => seat[count] === back);
-
   if (temp.length) {
     data = temp;
     row_bracket[0] = (row_bracket[0] + row_bracket[1] + 1) / 2;
@@ -929,7 +928,6 @@ for (let count = 0; count < 7; count++) {
 let seat_bracket = [0, 7];
 for (let count = 7; count < 10; count++) {
   temp = data.filter(seat => seat[count] === right);
-
   if (temp.length) {
     data = temp;
     seat_bracket[0] = (seat_bracket[0] + seat_bracket[1] + 1) / 2;

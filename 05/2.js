@@ -919,8 +919,7 @@ data.forEach(d => {
   covered_row.push(row);
 
   temp_row = data.filter((temp) => temp.substring(0, 7) === row);
-  if(temp_row.length === 7)
-  {
+  if (temp_row.length === 7) {
     row_with_missing_seat = temp_row;
     return false;
   }
@@ -930,10 +929,10 @@ let missing_seat_adjacent;
 row_with_missing_seat.forEach(d => {
   row = d.substring(0, 9);
   missing_seat_temp = row_with_missing_seat.filter((temp) => temp.substring(0, 9) === row);
-  if(missing_seat_temp.length === 1) {
+  if (missing_seat_temp.length === 1) {
     missing_seat_adjacent = missing_seat_temp[0];
   }
 })
 
-const missing_seat = missing_seat_adjacent.substring(0,9) + (missing_seat_adjacent[10] === 'L' ? 'R' : 'L');
+const missing_seat = missing_seat_adjacent.substring(0, 9) + (missing_seat_adjacent[10] === 'L' ? 'R' : 'L');
 console.log(missing_seat);
