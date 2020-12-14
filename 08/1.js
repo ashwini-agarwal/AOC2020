@@ -680,5 +680,6 @@ do {
     console.log(iteration.pop());
     break;
   }
+
   iteration.push({ index, accumulator });
 } while (instructions[index]);

@@ -697,6 +697,7 @@ do {
     resetAndTryNextFix(trial++);
     continue;
   }
+
   iteration.push({ index, accumulator });
 } while (fixedInstructions[index]);
 
