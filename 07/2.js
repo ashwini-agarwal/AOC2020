@@ -596,7 +596,6 @@ const rules = [
 ];
 
 const parsed_rules = {};
-
 rules.forEach(element => {
   let [outer, innerBags] = element.split(" bags contain ");
   let innerBagsArray = innerBags.replace(/ bag(s?)(\.?)/g, '').split(',').map(element => element.trim().split(/(\d+)/).filter(element => !!element));
