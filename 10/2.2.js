@@ -13,7 +13,7 @@ function combinationCounter(jolt = 0) {
 
   let count = 0;
   for (let i = 1; i <= 3; i++) {
-    const found = adaptors.find(adaptor => adaptor === jolt + i);
+    found = adaptors.find(adaptor => adaptor === jolt + i);
     if (found) {
       CACHE[found] = combinationCounter(found);
       count += CACHE[found];
