@@ -18,7 +18,6 @@ do {
     }
   }
 } while (found);
-
 const invalid_number = input[iteration + chunk];
 
 let sum = 0;
